@@ -1,0 +1,44 @@
+html, body {
+	height:100%;
+}
+
+
+body {
+	background-color:#000;
+	color:#ccc;
+}
+
+h1 {
+	text-align:center;
+	text-transform:uppercase;
+}
+
+#box {
+	width:50%;
+	padding-bottom:30%;
+	background-color:#f0f;
+	position:relative;
+	float:left;
+}
+
+#innerContent {
+	position:absolute;
+	background:#f0d;
+}
+
+#wrapper {
+	overflow:hidden;
+	position:relative;
+}
+
+#innerContent img {
+	width:100%;
+}
+
+h2 {
+	
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
