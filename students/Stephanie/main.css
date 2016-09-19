@@ -1,0 +1,49 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #ccccff;
+}
+
+.nav {
+	text-align: center;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#letter-s:hover {
+	color: red;
+}
+#letter-t:hover {
+	color: yellow;
+}
+#letter-e:hover {
+	color: orange;
+}
+#letter-p:hover {
+	color: green;
+}
+#letter-h:hover {
+	color: blue;
+}
+#letter-a:hover {
+	color: violet;
+}
+#letter-n:hover {
+	color: purple;
+}
+#letter-i:hover {
+	color: red;
+}
+#letter-e2:hover {
+	color: orange;
+}
+
+h1 {
+	padding-top: 25px;
+	font-size: 6em;
+}
