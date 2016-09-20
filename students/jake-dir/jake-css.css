@@ -5,11 +5,11 @@
 }
 
 @keyframes move {
-  0%   {background-color: red; left:0px; top:0px;}
-  25%  {background-color: yellow; left:200px; top:0px;}
-  50%  {background-color: blue; left:200px; top:200px;}
-  75%  {background-color: green; left:0px; top:200px;}
-  100% {background-color: red; left:0px; top:0px;}
+  0%   {background-color: red; left:0px; right:0px;}
+  25%  {background-color: yellow; left:200px; right:0px;}
+  50%  {background-color: blue; left:200px; right:200px;}
+  75%  {background-color: green; left:0px; right:200px;}
+  100% {background-color: red; left:0px; right:0px;}
 }
 
 h1 {
@@ -17,6 +17,7 @@ h1 {
   animation-duration: 5s;
   font-family: Monospace;
   color: red;
+  text-align: center;
 }
 p {
   font-size: 20px;
@@ -30,6 +31,10 @@ p {
 
 body {
   background-color: black;
+}
+
+img:first-of-type {
+  border-radius: 50px;
 }
 
 #band {
@@ -47,6 +52,11 @@ body {
 ul {
   color: yellow;
   padding-top: 15px;
+  text-indent: 50px;
+}
+
+ul li:last-child, li:nth-child(2) {
+  color: blue;
 }
 
 img {
@@ -57,4 +67,16 @@ img {
 img:hover {
     opacity: 1.0;
     filter: alpha(opacity=100);
+}
+
+.col-xs-4 {
+  background-color: pink;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.main:first-of-type {
+  font-family: sans-serif;
+  text-indent: 40px;
+  color: purple;
 }
