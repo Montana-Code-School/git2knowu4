@@ -5,18 +5,40 @@ html, body {
 
 body {
 	background-color:#000;
-	color:#ccc;
+	color:#ABD1DE;
+	margin: 10 10%;
+   padding: 0;
 }
 
 h1 {
 	text-align:center;
-	text-transform:uppercase;
+	font-family: 'Princess Sofia', cursive;
+	font-size:72px;
+	background-color:#222;
+}
+
+h1:hover {
+	background-color:#444;
+	color:#fff;
+}
+
+span {
+	font-size:56px;
 }
 
 #box {
 	width:50%;
-	padding-bottom:30%;
-	background-color:#f0f;
+	height:auto;
+	background-color:#222;
+	position:relative;
+	float:left;
+
+}
+
+#box2 {
+	width:75%;
+	padding-bottom:25%;
+	background-color:#222;
 	position:relative;
 	float:left;
 }
@@ -24,15 +46,45 @@ h1 {
 #innerContent {
 	position:absolute;
 	background:#f0d;
+
 }
 
 #wrapper {
 	overflow:hidden;
 	position:relative;
+
 }
 
 #innerContent img {
 	width:100%;
+}
+
+.top {
+	margin:10% 0;
+}
+
+.text {
+	position:absolute;
+	top:0;
+	color:#0f0;
+	background-color:rgba(255,255,255,.8);
+	width:100%;
+	height:auto;
+	text-align:center;
+	z-index:10;
+	opacity:0;
+	-webkit-transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	-o-transition:all .5s ease;
+	transition: all .5s ease;
+}
+
+.text:hover {
+	opacity:1;
+}
+
+img {
+	z-index:1;
 }
 
 h2 {
@@ -42,3 +94,36 @@ h2 {
 	left:50%;
 	transform:translate(-50%, -50%);
 }
+
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   #box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   #box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 4000px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   #box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+
+/*
+@media only screen and (max-width : 4000px) and (min-width : 1051px) {
+   
+   #box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
+*/
