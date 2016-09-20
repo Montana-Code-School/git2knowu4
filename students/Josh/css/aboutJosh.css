@@ -1,0 +1,32 @@
+/*Navigation*/
+.navbar {
+	background:#337ab7;
+	border:none;
+}
+
+.navbar a {
+	color:white!important;
+}
+
+.navbar-nav>.active>a {
+	background:#1B5274!important;
+}
+
+.carousel  {
+	display:block;
+	max-width:900px;
+	height:auto;
+	margin:0 auto;
+	position:absolute;
+	top: 0px;
+	right:0;
+	left:0;
+}
+
+.item img {
+	width:200%;
+	padding:40px 0 0 0;
+}
+
+body {
+}

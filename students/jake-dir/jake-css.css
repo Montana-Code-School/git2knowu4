@@ -1,0 +1,60 @@
+@keyframes fonts {
+  from {color: white;}
+  to {color: green;}
+
+}
+
+@keyframes move {
+  0%   {background-color: red; left:0px; top:0px;}
+  25%  {background-color: yellow; left:200px; top:0px;}
+  50%  {background-color: blue; left:200px; top:200px;}
+  75%  {background-color: green; left:0px; top:200px;}
+  100% {background-color: red; left:0px; top:0px;}
+}
+
+h1 {
+  animation-name: move;
+  animation-duration: 5s;
+  font-family: Monospace;
+  color: red;
+}
+p {
+  font-size: 20px;
+  animation-name: fonts;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: 15;
+  color: green;
+
+}
+
+body {
+  background-color: black;
+}
+
+#band {
+  font-family: Cinzel;
+}
+
+#dogs {
+  font-family: fantasy;
+}
+
+#chicks {
+  font-family: cursive;
+}
+
+ul {
+  color: yellow;
+  padding-top: 15px;
+}
+
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
