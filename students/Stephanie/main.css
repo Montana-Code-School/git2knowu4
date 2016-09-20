@@ -15,46 +15,33 @@ body {
 	padding-left: 10px;
 }
 
-#letter-s:hover {
+
+/*In the h1 tag, find the first <span> child and make it hover*/
+.rainbow span:nth-child(7n+1):hover {
 	color: red;
 }
-#letter-t:hover {
+.rainbow span:nth-child(7n+2):hover {
+	color: orange;
+}
+.rainbow span:nth-child(7n+3):hover{
 	color: yellow;
 }
-#letter-e:hover {
-	color: orange;
-}
-#letter-p:hover {
+.rainbow span:nth-child(7n+4):hover{
 	color: green;
 }
-#letter-h:hover {
+.rainbow span:nth-child(7n+5):hover{
 	color: blue;
 }
-#letter-a:hover {
+.rainbow span:nth-child(7n+6):hover{
 	color: violet;
 }
-#letter-n:hover {
+.rainbow span:nth-child(7n+7):hover{
 	color: purple;
-}
-#letter-i:hover {
-	color: red;
-}
-#letter-e2:hover {
-	color: orange;
 }
 
 h1 {
 	padding-top: 25px;
 	font-size: 6em;
-}
-
-.footer {
-	background-color: #323299;
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	height: 100px;
-	width: 100%;
 }
 
 .quotes {
@@ -80,7 +67,11 @@ h1 {
 	font-size: 18px;
 	font-weight: bold;
 }
-
+.footer {
+	background-color: #323299;
+	height: 100px;
+	width: 100%;
+}
 
 
 

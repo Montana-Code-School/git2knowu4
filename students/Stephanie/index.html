@@ -13,7 +13,9 @@
 				<a href="http://www.catan.com/">LOVES</a>
 			</ul>
 	<div class="intro">
-		<h1><span id="letter-s">S</span><span id="letter-t">T</span><span id="letter-e">E</span><span id="letter-p">P</span><span id="letter-h">H</span><span id="letter-a">A</span><span id="letter-n">N</span><span id="letter-i">I</span><span id="letter-e2">E</span></h1>
+		<h1><span class="rainbow">GOOD JOB</span></h1>
+		<h1><span class="rainbow">STEPHANIE</span></h1>
+		<h1><span class="rainbow">(and EVERYONE)</span></h1>
 		<p>What in the world will she think of next?</p>
 	</div>
 	<div class="quotes">
@@ -23,5 +25,19 @@
 	</div>
 	<div class="footer">
 	</div>
+	<script type="text/javascript">
+		var elements = document.getElementsByClassName("rainbow");
+		for ( var m = 0; m < elements.length; m++) {
+			var element = elements[m];
+			var name = element.innerHTML;
+			console.log(name);
+			var placename = "";
+			for( var i = 0; i < name.length; i++ ) {
+				placename += "<span>" + name.charAt(i) + "</span>";
+			}
+
+			element.innerHTML = placename;
+		}
+	</script>
 	</body>
 </html>
